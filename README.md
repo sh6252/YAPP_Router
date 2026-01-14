@@ -14,64 +14,37 @@ This verification environment implements:
 - Functional checks, error checks, protocol checks, and packet routing validation
 
 ### Project Structure
-.
+```
 ├── yapp/                 # YAPP Input Port UVC
-
 │   ├── yapp_packet.sv
-
 │   ├── yapp_tx_driver.sv
-
 │   ├── yapp_tx_monitor.sv
-
 │   ├── yapp_tx_seqs.sv
-
 │   ├── yapp_env.sv
-
 │   └── yapp_if.sv
-
 │
-
 ├── channel/              # Output Channel UVCs (0/1/2)
-
 │
-
 ├── hbus/                 # HBUS Host UVC (register programming)
-
 │
-
 ├── clock_reset/          # Clock & Reset UVC
-
 │
-
 ├── router_rtl/           # DUT RTL implementation
-
 │
-
 ├── environment/               # Router module UVC (scoreboard + RFM)
-
 │   ├── router_reference.sv
-
 │   ├── router_scoreboard.sv
-
 │   ├── router_module_env.sv
-
 │   └── packet_compare.sv
-
 │
-
 ├── tb/                   # Top testbench + tests + run files
-
 │   ├── router_tb.sv
-
 │   ├── router_test_lib.sv
-
 │   ├── tb_top.sv
-
 │   ├── hw_top.sv
-
 │   └── run.f
-
 └── README.md
+```
 
 ## Included UVCs
 🟦 YAPP UVC
