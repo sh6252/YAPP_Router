@@ -43,6 +43,7 @@ This verification environment implements:
 │   ├── tb_top.sv
 │   ├── hw_top.sv
 │   └── run.f
+├── COPTRIGHT.TXT
 └── README.md
 ```
 
